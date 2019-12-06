@@ -1,0 +1,10 @@
+<h1>Top rated bicycles</h1>
+
+<% bikes.forEach(function(bike) { %>
+    <li><%= bike %></li>
+<% }) %>
+
+<form action="/addbike" method="POST">
+    <input type="text" name="newbike" placeholder="bike">
+    <button>Submit</button>
+</form>
